@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        #5865f2,
+        #404eed
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.nav-logo img {
+    width: 170px;
+    transition: 0.3s;
+}
+
+.nav-logo img:hover {
+    opacity: 0.7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.btn-login {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 35px 80px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    line-height: 0.95;
+    margin-bottom: 24px;
+    max-width: 600px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.hero img {
+    width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 18px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: black;
+}
+
+.btn-secondary {
+    background: black;
+    color: white;
+}
+
