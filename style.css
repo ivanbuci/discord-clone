@@ -140,10 +140,14 @@ nav {
     }
     .hero-text p {
         font-size: 18px;
+        line-height: 1.5;
     }
     .hero-buttons {
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
+    }
+    .hero-buttons a {
+        width: fit-content;
     }
     .hero img {
         margin-top: 40px;
