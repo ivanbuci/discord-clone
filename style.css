@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: linear-gradient(
         180deg,
@@ -13,39 +12,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
 }
-
 .nav-logo img {
     width: 170px;
     transition: 0.3s;
 }
-
 .nav-logo img:hover {
     opacity: 0.7;
 }
-
 .nav-links {
     display: flex;
     gap: 35px;
 }
-
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
 }
-
 .nav-links a:hover {
     opacity: 0.7;
 }
-
 .btn-login {
     background: white;
     padding: 12px 20px;
@@ -55,43 +47,37 @@ nav {
     color: black;
     transition: 0.3s;
 }
-
 .btn-login:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 35px;
-    padding: 35px 80px;
+    padding: 80px;
+    min-height: 100vh;
 }
-
 .hero-text h1 {
     font-size: 64px;
     line-height: 0.95;
     margin-bottom: 24px;
     max-width: 600px;
 }
-
 .hero-text p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
     max-width: 520px;
 }
-
 .hero img {
     width: 700px;
 }
-
 .hero-buttons {
     display: flex;
     gap: 20px;
 }
-
 .hero-buttons a {
     display: flex;
     align-items: center;
@@ -103,13 +89,11 @@ nav {
     transition: 0.3s;
     white-space: nowrap;
 }
-
 .hero-buttons a:hover {
     transform: translateY(-3px);
     opacity: 0.9;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
-
 .btn-primary {
     display: flex;
     align-items: center;
@@ -117,12 +101,53 @@ nav {
     background: white;
     color: black;
 }
-
 .btn-secondary {
     background: black;
     color: white;
 }
-
+.features {
+    color: white;
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 80px;
+    margin: 80px 80px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.12),
+        rgba(255,255,255,0.03)
+    );
+    box-shadow: 
+    0 20px 60px rgba(0,0,0,0.18);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 80px;
+    transition: 0.3s;
+}
+.feature-item:hover {
+    transform: translateY(-8px);
+}
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+.feature-image img {
+    width: 600px;
+    border-radius: 80px;
+}
+.feature-text h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 24px;
+    max-width: 400px;
+}
+.feature-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 500px;
+}
 @media (max-width: 768px) {
     nav {
         padding: 20px;
@@ -158,6 +183,25 @@ nav {
     .hero img {
         margin-top: 40px;
         width: 100%;
+    }
+    .feature-item,
+    .feature-item.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+        border-radius: 30px;
+    }
+    .feature-image img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .feature-text h2 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    .feature-text p {
+        font-size: 18px;
+        max-width: 100%;
     }
 }
 
